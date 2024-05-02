@@ -3,9 +3,15 @@
 <remote name="phh" fetch="https://github.com/phhusson/" />
 <remote name="td" fetch="https://github.com/TrebleDroid/" />
 <remote name="naz" fetch="https://github.com/naz664/" />
+<remote name="OkBuddyGSI" fetch="https://github.com/OkBuddyGSI/" />
 
-<project path="device/phh/treble" name="device_phh_treble" remote="naz" revision="android-14.0" />
+<project path="device/phh/treble" name="device_phh_treble" remote="OkBuddyGSI" revision="android-14.0" />
+<project path="RisingOS_gsi" name="RisingOS_gsi" remote="OkBuddyGSI" revision="android-14.0" >
+    <linkfile dest="device/phh/treble/RisingOS.mk" src="RisingOS.mk" />
+</project>
+
 <project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="td" revision="pie" />
+
 
 <project path="vendor/vndk-tests" name="vendor_vndk-tests" remote="phh" revision="master" />
 <project path="vendor/interfaces" name="vendor_interfaces" remote="td" revision="android-14.0" />
